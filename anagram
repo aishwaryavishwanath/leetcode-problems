@@ -1,0 +1,18 @@
+public class String1 {
+
+public static void main(String[] args) {
+String s="aish"	;
+String t = "isha";
+
+char arr1[] = s.toCharArray();
+char arr2[] = t.toCharArray();
+Arrays.sort(arr1);
+Arrays.sort(arr2);
+String str1 = new String(arr1);
+String str2 = new String(arr2);
+if(str1.equals(str2))
+System.out.println("true");
+else
+System.out.println("false");
+
+}}
