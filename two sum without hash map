@@ -5,13 +5,13 @@ class Solution {
     for(int i=0;i<nums.length;i++)
     {
     System.out.println(i);
-    if(nums[i]==key && i!=present_index)
+    if(nums[i]==key && i!=present_index) //include the present index in order that it should not match with the array element itself 
     {
     return i;
     }
     
     }
-    return -1;
+    return -1; //if the element is not found 
     }
     
     public int[] twoSum(int[] nums, int target) {
@@ -20,7 +20,7 @@ class Solution {
         for(int i=0;i<nums.length;i++)
         {
         k=search(nums,target-nums[i],i);
-        if(k!=-1)
+        if(k!=-1) // in order ti make sure that the element is present in the array
         {
         a[0]=i;
         a[1]=k;
